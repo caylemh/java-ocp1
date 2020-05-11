@@ -1,4 +1,4 @@
-public class ShoppingCart {
+public class Exercise1 {
     public static void main(String[] args) {
         // Declare and initialize String variables. Do not initialize message yet.
         String custName = "Caylem Harris", itemDesc = "Shirt";
