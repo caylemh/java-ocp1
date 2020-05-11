@@ -4,5 +4,7 @@
 ## Chapter 3 - Shopping Cart:
 *   - Learning about the *main* method and other methods.
 ## Chapter 4 - Variables:
-*   - Declaring, initializing & concatenating *String* variables and literals.
-*   - Using & manipulating numbers.
+*   - Ex1: Declaring, initializing & concatenating *String* variables and literals.
+*   - Ex2: Using & manipulating numbers.
+## Chapter 5 - Managing Multiple Items:
+*   - Ex1: Using *if* Statements.
