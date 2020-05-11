@@ -8,3 +8,4 @@
 *   - Ex2: Using & manipulating numbers.
 ## Chapter 5 - Managing Multiple Items:
 *   - Ex1: Using *if* Statements.
+*   - Ex2: Working with an *array* of items.
