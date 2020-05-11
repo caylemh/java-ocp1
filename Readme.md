@@ -9,3 +9,4 @@
 ## Chapter 5 - Managing Multiple Items:
 *   - Ex1: Using *if* Statements.
 *   - Ex2: Working with an *array* of items.
+*   - Ex3: Processing an *array* of items.
