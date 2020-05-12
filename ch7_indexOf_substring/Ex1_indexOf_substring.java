@@ -1,4 +1,4 @@
-public class Ex7_indexOf_substring {
+public class Ex1_indexOf_substring {
     public static void main(String[] args) {
         String custName = "Steve Smith";
         String firstName;
