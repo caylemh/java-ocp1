@@ -15,3 +15,10 @@
    - Defining fields and methods.
    - Declaring, instantiating, and using objects.
    - Working with object references.
+   - Doing more with Arrays.
+   - Introducing Netbeans IDE. 
+   - Introducing the Soccer League use case.
+## Chapter 7:
+   - Using the *String* class. 
+   - Using the Java API.
+   
