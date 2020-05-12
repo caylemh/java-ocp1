@@ -21,4 +21,5 @@
 ## Chapter 7:
    - Using the *String* class. 
    - Using the Java API.
+   - Using the *StringBuilder* class.
    
