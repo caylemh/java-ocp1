@@ -10,3 +10,8 @@
 *   - Ex1: Using *if* Statements.
 *   - Ex2: Working with an *array* of items.
 *   - Ex3: Processing an *array* of items.
+## Chapter 6:
+*   - Describing Objects and classes.
+*   - Defining fields and methods.
+*   - Declaring, instantiating, and using objects.
+*   - Working with object references.
