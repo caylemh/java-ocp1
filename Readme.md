@@ -22,4 +22,7 @@
    - Using the *String* class. 
    - Using the Java API.
    - Using the *StringBuilder* class.
+   - Doing more with primitive data types.
+   - Using the remaining numeric operators.
+   - Promoting & Casting variables.
    
