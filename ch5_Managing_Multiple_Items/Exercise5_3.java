@@ -3,9 +3,9 @@ public class Exercise5_3 {
         // local variables
         String custName = "Mary Smith";
         String message;
-        double price = 21.99;
-        int quantity = 2;
-        double tax = 1.04;
+        //double price = 21.99;
+        //int quantity = 2;
+        //double tax = 1.04;
 
         String items[];
         items = new String[4];
