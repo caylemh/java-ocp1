@@ -1,6 +1,6 @@
 public class Ex6_Item {
     public int id;
-    public String descr;
+    public String desc;
     public int quantity;
     public double price;
 }
