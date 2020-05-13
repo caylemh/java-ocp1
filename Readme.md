@@ -28,7 +28,10 @@
 ## Chapter 8 - Creating & Using Methods:
    - Using methods & constructors.
    - Method arguments & return values.
-   
+   - Using Static methds & variables.
+   - Understanding how arguments are passed to a method.
+   - Overloading a method.
+
 
 
 
