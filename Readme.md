@@ -18,11 +18,18 @@
    - Doing more with Arrays.
    - Introducing Netbeans IDE. 
    - Introducing the Soccer League use case.
-## Chapter 7:
+## Chapter 7 - Manipulating & Formatting the data in Your Program:
    - Using the *String* class. 
    - Using the Java API.
    - Using the *StringBuilder* class.
    - Doing more with primitive data types.
    - Using the remaining numeric operators.
    - Promoting & Casting variables.
+## Chapter 8 - Creating & Using Methods:
+   - Using methods & constructors.
+   - Method arguments & return values.
+   
+
+
+
    
