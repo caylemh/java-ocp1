@@ -31,6 +31,10 @@
    - Using Static methds & variables.
    - Understanding how arguments are passed to a method.
    - Overloading a method.
+## Chapter 9 - Using Encapsulation:
+   - Access Control.
+   - Encapsulation.
+   - Overloading constructors.
 
 
 
