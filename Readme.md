@@ -47,3 +47,9 @@
    - Alternate looping constructs.
    - Nesting loops.
    - the *ArrayList* class.
+## Chapter 12 - Using Inheritance:
+   - Overview of inheritance.
+   - Working with superclasses and subclasses.
+   - Overriding superclass methods.
+   - Introducing Polymorphism.
+   - Creating and extedning abstract classes.
