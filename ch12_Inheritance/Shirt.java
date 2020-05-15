@@ -7,4 +7,13 @@ public class Shirt extends Ex1_Item1 {
         this.pattern = pattern;
         this.cut = cut;
     }
+
+    public void display() {
+        // System.out.println("Item description: "+getDesc());
+        // System.out.println("\tID: "+getId());
+        // System.out.println("\tPrice: "+getPrice());
+        super.display();
+        System.out.println("\tPattern: "+pattern);
+        System.out.println("\tCut: "+cut);
+    }
 }
