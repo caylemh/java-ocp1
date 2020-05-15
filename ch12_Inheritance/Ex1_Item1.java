@@ -18,7 +18,7 @@ public class Ex1_Item1 {
     }
 
     public void display(){
-        System.out.println("Item description: "+getDesc());
+        System.out.println("\nItem description: "+getDesc());
         System.out.println("\tID: "+getId());
         System.out.println("\tPrice: "+getPrice());
     }
