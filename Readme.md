@@ -52,4 +52,4 @@
    - Working with superclasses and subclasses.
    - Overriding superclass methods.
    - Introducing Polymorphism.
-   - Creating and extedning abstract classes.
+   - Creating and extending abstract classes.
