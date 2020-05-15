@@ -35,8 +35,15 @@
    - Access Control.
    - Encapsulation.
    - Overloading constructors.
-## Cahpter 10 - More on Conditionals:
+## Chapter 10 - More on Conditionals:
    - Relational & conditional operators.
    - More ways to use *if/else* statements.
    - Using a *switch* statement.
    - Using the NetBeans debugger.
+## Chapter 11 - Working with Arrays, Loops and Dates:
+   - Working with dates.
+   - Parsing the *args* array.
+   - Two-dimensional arrays.
+   - Alternate looping constructs.
+   - Nesting loops.
+   - the *ArrayList* class.
