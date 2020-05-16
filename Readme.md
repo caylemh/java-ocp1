@@ -53,3 +53,8 @@
    - Overriding superclass methods.
    - Introducing Polymorphism.
    - Creating and extending abstract classes.
+## Chapter 13 - Using Interfaces:
+   - Polymorphism in the JDK foundation classes.
+   - Using interfaces.
+   - Using the *List* interface.
+   - Introducing lambda expressions.
