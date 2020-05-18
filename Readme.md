@@ -63,4 +63,11 @@
    - Propagation of exceptions
    - Catching and thoring exceptions
    - Multiple exceptions and errors
-   
+## Chapter 15 - Deploying & Maintaining an Application:
+   - Packages
+   - JARs and deployment
+   - Two-tier and Three-tier architecture
+   - The Soccer Applicaiton
+   - Application modifications & enhancements
+
+# END OF COURSE 
