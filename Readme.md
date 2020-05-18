@@ -58,3 +58,9 @@
    - Using interfaces.
    - Using the *List* interface.
    - Introducing lambda expressions.
+## Chapter 14 - Handling Exceptions:
+   - Handling exceptions: an overview
+   - Propagation of exceptions
+   - Catching and thoring exceptions
+   - Multiple exceptions and errors
+   
