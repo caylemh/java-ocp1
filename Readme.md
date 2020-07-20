@@ -59,13 +59,14 @@
    - Using the *List* interface.
    - Introducing lambda expressions.
 ## Chapter 14 - Handling Exceptions:
-   - Handling exceptions: an overview
-   - Propagation of exceptions
-   - Catching and thoring exceptions
-   - Multiple exceptions and errors
+   - Handling exceptions: an overview.
+   - Propagation of exceptions.
+   - Catching and thoring exceptions.
+   - Multiple exceptions and errors.
 ## Activity Guide - Soccer Game:
    - Creating Classes for the Game.
-   - Creating a Soccer Game
+   - Creating a Soccer Game.
    - Manipulating Text using *String and StringBuilder*.
+   - Using Methods.
 
 # END OF COURSE 
