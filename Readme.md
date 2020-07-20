@@ -66,5 +66,6 @@
 ## Activity Guide - Soccer Game:
    - Creating Classes for the Game.
    - Creating a Soccer Game
+   - Manipulating Text using *String and StringBuilder*.
 
 # END OF COURSE 
