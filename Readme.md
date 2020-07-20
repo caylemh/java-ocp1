@@ -63,5 +63,8 @@
    - Propagation of exceptions
    - Catching and thoring exceptions
    - Multiple exceptions and errors
+## Activity Guide - Soccer Game:
+   - Creating Classes for the Game.
+   - Creating a Soccer Game
 
 # END OF COURSE 
