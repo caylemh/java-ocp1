@@ -60,5 +60,25 @@ public class League {
                     currGame.goals[0].theTime + " mins by " + 
                     currGame.goals[0].thePlayer.playerName + " of " +
                     currGame.goals[0].theTeam.teamName);
+
+        /* Practice 7-1. Manipulating Text */
+
+        for (Player thePlayer: team2.playerArray) {
+            if(thePlayer.playerName.matches(".*Sab.*")) {
+                System.out.println("\nFound " + thePlayer.playerName);
+                System.out.println("The Last name is " + thePlayer.playerName.split(" ")[1]);
+            }
+        } 
+
+        StringBuilder familyNameFirst = new StringBuilder();
+        for (Player thePlayer: team1.playerArray) {
+            String name[] = thePlayer.playerName.split(" ");
+            familyNameFirst.append(name[1]);
+            familyNameFirst.append(", ");
+            familyNameFirst.append(name[0]);
+            System.out.println(familyNameFirst);
+            familyNameFirst.delete(0, familyNameFirst.length());
+        }  
+
     }   
 }
