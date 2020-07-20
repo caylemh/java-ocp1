@@ -1,8 +1,7 @@
 import java.util.ArrayList;
-import java.util.function.Predicate;
 
 public class Ex2_ShoppingCart {
-    ArrayList<Ex2_Item> items = new ArrayList();
+    ArrayList<Ex2_Item> items = new ArrayList<>();
     
     public static void main(String[] args){
         Ex2_ShoppingCart cart = new Ex2_ShoppingCart();

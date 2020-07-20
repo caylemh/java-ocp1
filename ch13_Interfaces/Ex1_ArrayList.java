@@ -11,7 +11,7 @@ public class Ex1_ArrayList {
         // Print all other days in lower case 
         // Print out the ArrayList  
 
-        ArrayList<String> myArrayList = new ArrayList(Arrays.asList(days));
+        ArrayList<String> myArrayList = new ArrayList<>(Arrays.asList(days));
 
         for (String item: myArrayList) {
             if (item == "sunday") {
