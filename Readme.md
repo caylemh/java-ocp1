@@ -61,7 +61,7 @@
 ## Chapter 14 - Handling Exceptions:
    - Handling exceptions: an overview.
    - Propagation of exceptions.
-   - Catching and thoring exceptions.
+   - Catching and throwing exceptions.
    - Multiple exceptions and errors.
 ## Activity Guide - Soccer Game:
    - Creating Classes for the Game.
