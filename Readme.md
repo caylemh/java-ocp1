@@ -69,5 +69,6 @@
    - Manipulating Text using *String and StringBuilder*.
    - Using Methods & Overloading Methods.
    - Adding Constructors.
+   - More on Conditionals.
 
 # END OF COURSE 
