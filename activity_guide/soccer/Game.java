@@ -38,8 +38,10 @@ public class Game {
         for (Goal currGoal: this.getGoals()) {
             if(currGoal.getTheTeam() == homeTeam) {
                 homeTeamGoals++;
+                homeTeam.incGoalsTotal(1);
             } else {
                 awayTeamGoals++;
+                awayTeam.incGoalsTotal(1);
             }
 
             returnString.append("Goal scored after "
