@@ -26,14 +26,44 @@ public class Game {
     }
 
     public String getDescription() {
+        // Keeping score for the winning team
+        int homeTeamGoals = 0;
+        int awayTeamGoals = 0;
+
         StringBuilder returnString = new StringBuilder();
+
+        // Print the fixtures
+        returnString.append(homeTeam.getTeamName() + " vs. " + awayTeam.getTeamName() + "\n");
+
         for (Goal currGoal: this.getGoals()) {
+            if(currGoal.getTheTeam() == homeTeam) {
+                homeTeamGoals++;
+            } else {
+                awayTeamGoals++;
+            }
+
             returnString.append("Goal scored after "
             + currGoal.getTheTime() + " mins by "
             + currGoal.getThePlayer().getPlayerName() + " of "
             + currGoal.getTheTeam().getTeamName() +
               "\n");
         }
+
+        // Determining the winning team
+        if(homeTeamGoals == awayTeamGoals) {
+            returnString.append("\t---- It's a draw!!!");
+            homeTeam.incPointsTotal(1);
+            awayTeam.incPointsTotal(1);
+        } else if(homeTeamGoals > awayTeamGoals){
+            returnString.append("\t---- " + homeTeam.getTeamName() + " win!!!");
+            homeTeam.incPointsTotal(2);
+        } else {
+            returnString.append("\t---- " + awayTeam.getTeamName() + " win!!!");
+            awayTeam.incPointsTotal(2);
+        }
+
+        returnString.append(" (" + homeTeamGoals + " - " + awayTeamGoals + ") ----\n");
+
         return returnString.toString();
     }
 

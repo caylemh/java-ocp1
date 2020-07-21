@@ -13,6 +13,8 @@ public class League {
             currGame.playGame();
             System.out.println(currGame.getDescription());
         }
+
+        theLeague.showBestTeam(theTeams);
     }  
     
     /* Practice 8-1 Using Methods */
@@ -46,5 +48,20 @@ public class League {
 
         Game[] theGames = {theGame, theGame2, theGame3, theGame4};
         return theGames;
+    }
+
+    public void showBestTeam(Team[] theTeams) {
+        System.out.println("\n**** Team Points ****");
+
+        Team currBestTeam = theTeams[0];
+
+        for(Team currTeam: theTeams) {
+            System.out.println("\t" + currTeam.getTeamName() + ":" +
+                    currTeam.getPointsTotal());
+            currBestTeam = currTeam.getPointsTotal() >
+                    currBestTeam.getPointsTotal() ? currTeam:currBestTeam;
+        }
+
+        System.out.println("$$$ Winner of the league is " + currBestTeam.getTeamName() + " $$$");
     }
 }
