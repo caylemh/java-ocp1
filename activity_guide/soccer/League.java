@@ -3,7 +3,7 @@ package soccer;
 public class League {
 
     public static void main(String[] args) {
-
+        /* Practice 8-3 */
         League theLeague = new League();
 
         Team[] theTeams = theLeague.createTeams();
