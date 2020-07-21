@@ -1,4 +1,4 @@
-public class Ex2_Item {
+public class Ex2_Item_1 {
     private int id;
     private String desc;
     private double price;
@@ -6,7 +6,7 @@ public class Ex2_Item {
     static int nextId = 1;
     
     // Default constructor sets default values
-    public Ex2_Item(){
+    public Ex2_Item_1(){
         setId();
         setDesc("No description assigned.");
         setPrice(0.00);
@@ -14,7 +14,7 @@ public class Ex2_Item {
     }
     
     // Overloaded constructor takes description and price
-    public Ex2_Item(String desc, double price, char cCode) {
+    public Ex2_Item_1(String desc, double price, char cCode) {
         setId();
         setDesc(desc);
         setPrice(price);
@@ -30,7 +30,7 @@ public class Ex2_Item {
 
     // Getter and Setter methods
     private void setId() {
-        id = Ex2_Item.nextId++;
+        id = Ex2_Item_1.nextId++;
     }
 
     public int getId() {

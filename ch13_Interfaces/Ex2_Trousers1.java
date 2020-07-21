@@ -1,9 +1,9 @@
-public class Ex2_Trousers extends Ex2_Item{
+public class Ex2_Trousers1 extends Ex2_Item_1 {
     private int size;
     private char gender;
     private String fit;
     
-    public Ex2_Trousers(double price, int size, char colorCode, String fit,char gender){
+    public Ex2_Trousers1(double price, int size, char colorCode, String fit, char gender){
         super ("Trousers", price, colorCode);
         this.setSize(size);
         this.setGender(gender);

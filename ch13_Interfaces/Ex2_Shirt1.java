@@ -1,7 +1,7 @@
-public class Ex2_Shirt extends Ex2_Item {
+public class Ex2_Shirt1 extends Ex2_Item_1 {
     private char size;
     
-    public Ex2_Shirt(double price, char size, char colorCode){
+    public Ex2_Shirt1(double price, char size, char colorCode){
         super ("Shirt", price, colorCode);
         this.setSize(size);
     }
