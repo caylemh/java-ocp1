@@ -4,6 +4,14 @@ public class Team {
     private String teamName;
     private Player[] playerArray;
 
+    public Team(String teamName) {
+        this.teamName = teamName;
+    }
+
+    public Team(Player[] playerArray) {
+        this.playerArray = playerArray;
+    }
+
     public String getTeamName() {
         return teamName;
     }
