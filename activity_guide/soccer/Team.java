@@ -6,11 +6,8 @@ public class Team {
     private int pointsTotal;
     private int goalsTotal;
 
-    public Team(String teamName) {
+    public Team(String teamName, Player[] playerArray) {
         this.teamName = teamName;
-    }
-
-    public Team(Player[] playerArray) {
         this.playerArray = playerArray;
     }
 
