@@ -1,15 +1,19 @@
 package soccer;
 import utility.GameUtils;
 import java.lang.StringBuilder;
+import java.time.*;
+import java.time.format.DateTimeFormatter;
 
-public class Game {   
+public class Game {
     private Team homeTeam;
     private Team awayTeam;
     private Goal[] goals;
+    private LocalDateTime theDateTime;
 
-    public Game(Team homeTeam, Team awayTeam) {
+    public Game(Team homeTeam, Team awayTeam, LocalDateTime theDateTime) {
         this.homeTeam = homeTeam;
         this.awayTeam = awayTeam;
+        this.theDateTime = theDateTime;
     }
 
     public void playGame(int maxGoals) {
@@ -33,7 +37,8 @@ public class Game {
         StringBuilder returnString = new StringBuilder();
 
         // Print the fixtures
-        returnString.append(homeTeam.getTeamName() + " vs. " + awayTeam.getTeamName() + "\n");
+        returnString.append(homeTeam.getTeamName() + " vs. " + awayTeam.getTeamName() + "\n" +
+                "Date " + this.theDateTime.format(DateTimeFormatter.ISO_LOCAL_DATE) + "\n");
 
         for (Goal currGoal: this.getGoals()) {
             if(currGoal.getTheTeam() == homeTeam) {
@@ -67,6 +72,14 @@ public class Game {
         returnString.append(" (" + homeTeamGoals + " - " + awayTeamGoals + ") ----\n");
 
         return returnString.toString();
+    }
+
+    public LocalDateTime getTheDateTime() {
+        return theDateTime;
+    }
+
+    public void setTheDateTime(LocalDateTime theDateTime) {
+        this.theDateTime = theDateTime;
     }
 
     public Team getHomeTeam() {
