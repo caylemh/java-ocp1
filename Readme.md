@@ -71,6 +71,7 @@
    - Adding Constructors.
    - More on Conditionals & Using Conditionals.
    - Debugging.
-   - Iterating through data.
+   - Iterating through data using *StringTokenizer & ArrayList*.
+   - Working with *LocalDateTime*.
 
 # END OF COURSE 
