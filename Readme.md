@@ -73,5 +73,7 @@
    - Debugging.
    - Iterating through data using *StringTokenizer & ArrayList*.
    - Working with *LocalDateTime*.
+   - Creating a Class Hierarchy.
+   - Creating a *GameEvent* Hierarchy.
 
 # END OF COURSE 
