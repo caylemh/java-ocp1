@@ -71,5 +71,6 @@
    - Adding Constructors.
    - More on Conditionals & Using Conditionals.
    - Debugging.
+   - Iterating through data.
 
 # END OF COURSE 
