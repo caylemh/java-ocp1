@@ -1,8 +1,9 @@
 package soccer;
-import utility.GameUtils;
+
 import java.lang.StringBuilder;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 
 public class Game {
     private Team homeTeam;
@@ -16,17 +17,24 @@ public class Game {
         this.theDateTime = theDateTime;
     }
 
-    public void playGame(int maxGoals) {
-        int numberOfGoals = (int)(Math.random() * (maxGoals + 1));
-        Goal[] theGoals = new Goal[numberOfGoals];
-        //System.out.println(theGoals.length);
-        this.setGoals(theGoals);
-        GameUtils.addGameGoals(this);
-    }
-
     /* Practice 8-3 Overloading Methods */
     public void playGame() {
-        playGame(6);
+        ArrayList<Goal> eventList = new ArrayList();
+        Goal currEvent;
+
+        for(int i=0; i<=90; i++) {
+            if(Math.random() > 0.95) {
+                //System.out.println(i);
+                currEvent = new Goal();
+                currEvent.setTheTeam(Math.random() > 0.5 ? homeTeam:awayTeam);
+                currEvent.setThePlayer(currEvent.getTheTeam().getPlayerArray()[(int) (Math.random() *
+                        currEvent.getTheTeam().getPlayerArray().length)]);
+                currEvent.setTheTime(i);
+                eventList.add(currEvent);
+            }
+        }
+        this.goals = new Goal[eventList.size()];
+        eventList.toArray(goals);
     }
 
     public String getDescription() {
