@@ -5,6 +5,7 @@ import utility.PlayerDatabase;
 import java.time.LocalDateTime;
 import java.time.Period;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class League {
@@ -56,19 +57,20 @@ public class League {
     }
 
     public void showBestTeam(Team[] theTeams) {
+        Arrays.sort(theTeams);
         Team currBestTeam = theTeams[0];
         System.out.println("\n**** Team Points ****");
 
         for(Team currTeam: theTeams) {
             System.out.println("\t" + currTeam.getTeamName() + ":" +
                     currTeam.getPointsTotal() + ":" + currTeam.getGoalsTotal());
-            if(currTeam.getPointsTotal() > currBestTeam.getPointsTotal()) {
-                currBestTeam = currTeam;
-            } else if(currTeam.getPointsTotal() == currBestTeam.getPointsTotal()) {
-                if(currTeam.getGoalsTotal() > currBestTeam.getGoalsTotal()) {
-                    currBestTeam = currTeam;
-                }
-            }
+//            if(currTeam.getPointsTotal() > currBestTeam.getPointsTotal()) {
+//                currBestTeam = currTeam;
+//            } else if(currTeam.getPointsTotal() == currBestTeam.getPointsTotal()) {
+//                if(currTeam.getGoalsTotal() > currBestTeam.getGoalsTotal()) {
+//                    currBestTeam = currTeam;
+//                }
+//            }
         }
 
         System.out.println("$$$ Winner of the league is " + currBestTeam.getTeamName() + " $$$");
