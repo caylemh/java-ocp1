@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class Game {
     private Team homeTeam;
     private Team awayTeam;
-    private GameEvent[] gameEvents;
+    private GameEvent[] goals;
     private LocalDateTime theDateTime;
 
     public Game(Team homeTeam, Team awayTeam, LocalDateTime theDateTime) {
@@ -23,9 +23,9 @@ public class Game {
         GameEvent currEvent;
 
         for(int i=0; i<=90; i++) {
-            if(Math.random() > 0.95) {
+            if(Math.random() > 0.8) {
                 //System.out.println(i);
-                currEvent = Math.random() > 0.6 ? new Goal():new Possession();
+                currEvent = Math.random() > 0.8 ? new Goal():new Possession();
                 currEvent.setTheTeam(Math.random() > 0.5 ? homeTeam:awayTeam);
                 currEvent.setThePlayer(currEvent.getTheTeam().getPlayerArray()[(int) (Math.random() *
                         currEvent.getTheTeam().getPlayerArray().length)]);
@@ -33,8 +33,8 @@ public class Game {
                 eventList.add(currEvent);
             }
         }
-        this.gameEvents = new Goal[eventList.size()];
-        eventList.toArray(gameEvents);
+        this.goals = new GameEvent[eventList.size()];
+        eventList.toArray(goals);
     }
 
     public String getDescription() {
@@ -49,13 +49,17 @@ public class Game {
                 "Date " + this.theDateTime.format(DateTimeFormatter.ISO_LOCAL_DATE) + "\n");
 
         for (GameEvent currEvent: this.getEvents()) {
-            if(currEvent.getTheTeam() == homeTeam) {
-                homeTeamGoals++;
-                homeTeam.incGoalsTotal(1);
-            } else {
-                awayTeamGoals++;
-                awayTeam.incGoalsTotal(1);
+
+            if(currEvent instanceof Goal) {
+                if(currEvent.getTheTeam() == homeTeam) {
+                    homeTeamGoals++;
+                    homeTeam.incGoalsTotal(1);
+                } else {
+                    awayTeamGoals++;
+                    awayTeam.incGoalsTotal(1);
+                }
             }
+
 
             returnString.append(currEvent + " after "
             + currEvent.getTheTime() + " mins by "
@@ -67,14 +71,14 @@ public class Game {
         // Determining the winning team
         if(homeTeamGoals == awayTeamGoals) {
             returnString.append("\t---- It's a draw!!!");
-            homeTeam.incPointsTotal(1);
-            awayTeam.incPointsTotal(1);
+            this.homeTeam.incPointsTotal(1);
+            this.awayTeam.incPointsTotal(1);
         } else if(homeTeamGoals > awayTeamGoals){
             returnString.append("\t---- " + homeTeam.getTeamName() + " win!!!");
-            homeTeam.incPointsTotal(2);
+            this.homeTeam.incPointsTotal(2);
         } else {
             returnString.append("\t---- " + awayTeam.getTeamName() + " win!!!");
-            awayTeam.incPointsTotal(2);
+            this.awayTeam.incPointsTotal(2);
         }
 
         returnString.append(" (" + homeTeamGoals + " - " + awayTeamGoals + ") ----\n");
@@ -107,11 +111,11 @@ public class Game {
     }
 
     public GameEvent[] getEvents() {
-        return gameEvents;
+        return goals;
     }
 
-    public void setEvents(GameEvent[] gameEvents) {
-        this.gameEvents = gameEvents;
+    public void setEvents(GameEvent[] goals) {
+        this.goals = goals;
     }
 }
 
