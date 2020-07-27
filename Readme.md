@@ -76,5 +76,6 @@
    - Creating a Class Hierarchy.
    - Creating a *GameEvent* Hierarchy.
    - Overriding the *toString* Method.
+   - Implementing an Interface.
 
 # END OF COURSE 
