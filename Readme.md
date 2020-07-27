@@ -77,5 +77,6 @@
    - Creating a *GameEvent* Hierarchy.
    - Overriding the *toString* Method.
    - Implementing an Interface.
+   - Using a Lambda Expression for Sorting.
 
 # END OF COURSE 
