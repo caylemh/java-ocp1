@@ -1,6 +1,7 @@
 package soccer;
 
 import utility.PlayerDatabase;
+import utility.PlayerDatabaseException;
 
 import java.time.LocalDateTime;
 import java.time.Period;
@@ -15,22 +16,26 @@ public class League {
         /* Practice 8-3 */
         League theLeague = new League();
 
-        Team[] theTeams = theLeague.createTeams("The Robins,The Crows,The Swallows", 5);
-        Game[] theGames = theLeague.createGames(theTeams);
+        try {
+            Team[] theTeams = theLeague.createTeams("The Robins,The Crows,The Swallows,The Owls", 6);
+            Game[] theGames = theLeague.createGames(theTeams);
 
-        System.out.println(theLeague.getLeagueAnnouncement(theGames));
+            System.out.println(theLeague.getLeagueAnnouncement(theGames));
 
-        for(Game currGame: theGames) {
-            currGame.playGame();
-            System.out.println(currGame.getDescription());
+            for (Game currGame : theGames) {
+                currGame.playGame();
+                System.out.println(currGame.getDescription());
+            }
+
+            theLeague.showBestTeam(theTeams);
+            theLeague.showBestPlayers(theTeams);
+        } catch (Exception e) {
+            e.printStackTrace(System.err);
         }
-
-        theLeague.showBestTeam(theTeams);
-        theLeague.showBestPlayers(theTeams);
     }  
     
     /* Practice 8-1 Using Methods */
-    public Team[] createTeams(String teamNames, int teamSize) {
+    public Team[] createTeams(String teamNames, int teamSize) throws PlayerDatabaseException {
         PlayerDatabase playerDB = new PlayerDatabase();
         StringTokenizer teamNameTokens = new StringTokenizer(teamNames, ",");
         Team[] theTeams = new Team[teamNameTokens.countTokens()];
