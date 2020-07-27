@@ -78,5 +78,6 @@
    - Overriding the *toString* Method.
    - Implementing an Interface.
    - Using a Lambda Expression for Sorting.
+   - Adding Exception Handling.
 
 # END OF COURSE 
